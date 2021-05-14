@@ -5,3 +5,6 @@ file3.txt
 
 [local]
 local.txt
+
+[relative]
+folder/relative.txt
