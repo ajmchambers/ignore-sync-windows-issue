@@ -19,8 +19,7 @@ const LF = {
 function chkcrlf(text){
 	return {
 		lf: /\n/.test(text.replace(/\r\n/g, '')),
-		crlf: /\r\n/.test(text),
-		cr: /\r(?!\n)/.test(text),
+		crlf: /\r\n/.test(text)
 	};
 }
 
@@ -81,7 +80,6 @@ function logEndings(fileInfo) {
       ...result,
       changed: result.input.lf !== result.output.lf
         || result.input.clrf !== result.output.clrf
-        || result.input.cr !== result.output.cr
     }
   }
     
