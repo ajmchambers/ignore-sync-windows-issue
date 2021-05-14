@@ -2,18 +2,18 @@ const fs = require('fs');
 const path = require('path');
 
 const AUTO = {
-  input: '.auto-sync',
-  output: '.auto'
+  input: '.testauto-sync',
+  output: '.testauto'
 }
 
 const CRLF = {
-  input: '.crlf-sync',
-  output: '.crlf'
+  input: '.testcrlf-sync',
+  output: '.testcrlf'
 }
 
 const LF = {
-  input: '.lf-sync',
-  output: '.lf'
+  input: '.testlf-sync',
+  output: '.testlf'
 }
 
 function chkcrlf(text){

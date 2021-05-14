@@ -2,9 +2,9 @@
 * text=auto
 
 # Declare files that will always have CRLF line endings on checkout.
-.crlf-sync text eol=crlf
-.crlf text eol=crlf
+.testcrlf-sync text eol=crlf
+.testcrlf text eol=crlf
 
 # Declare files that will always have LF line endings on checkout.
-.lf-sync text eol=lf
-.lf text eol=lf
+.testlf-sync text eol=lf
+.testlf text eol=lf
