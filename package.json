@@ -8,6 +8,7 @@
     "ignore-sync": "ignore-sync .",
     "log-endings": "node logEndings.js",
     "list-files": "git ls-files --eol",
+    "revert": "git restore .autoignore && git restore .crlfignore && git restore .lfignore",
     "test": "npm run ignore-sync && npm run log-endings && npm run list-files"
   },
   "keywords": [],
