@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "ignore-sync . && node logEndings.js"
+    "start": "ignore-sync . && node logEndings.js && git ls-files --eol"
   },
   "keywords": [],
   "author": "",
