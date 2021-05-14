@@ -1,2 +1,10 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Declare files that will always have CRLF line endings on checkout.
+.crlf-sync text eol=crlf
+.crlf text eol=crlf
+
+# Declare files that will always have LF line endings on checkout.
+.lf-sync text eol=lf
+.lf text eol=lf

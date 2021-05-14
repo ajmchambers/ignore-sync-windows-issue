@@ -1,8 +1,0 @@
-[inline]
-inline-file.txt
-
-[local]
-local.txt
-
-[relative]
-__fixtures__/.testignore
