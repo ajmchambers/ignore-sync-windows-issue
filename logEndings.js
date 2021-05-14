@@ -2,18 +2,18 @@ const fs = require('fs');
 const path = require('path');
 
 const AUTO = {
-  input: '.testauto-sync',
-  output: '.testauto'
+  input: '.autoignore-sync',
+  output: '.autoignore'
 }
 
 const CRLF = {
-  input: '.testcrlf-sync',
-  output: '.testcrlf'
+  input: '.crlfignore-sync',
+  output: '.crlfignore'
 }
 
 const LF = {
-  input: '.testlf-sync',
-  output: '.testlf'
+  input: '.lfignore-sync',
+  output: '.lfignore'
 }
 
 function chkcrlf(text){
@@ -76,6 +76,15 @@ function logEndings(fileInfo) {
     };
   }
   
+  if (!result.input.error && !result.output.error) {
+    result = {
+      ...result,
+      changed: result.input.lf !== result.output.lf
+        || result.input.clrf !== result.output.clrf
+        || result.input.cr !== result.output.cr
+    }
+  }
+    
   return result;
 }
 

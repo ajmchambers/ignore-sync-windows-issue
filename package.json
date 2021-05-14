@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "npm run ignore-sync",
     "ignore-sync": "ignore-sync .",
-    "start": "npm run ignore-sync && node logEndings.js && git ls-files --eol"
+    "log-endings": "node logEndings.js",
+    "list-files": "git ls-files --eol",
+    "test": "npm run ignore-sync && npm run log-endings && npm run list-files"
   },
   "keywords": [],
   "author": "",
